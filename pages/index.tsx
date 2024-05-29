@@ -75,7 +75,8 @@ export default function Home () {
               <h2 className='text-2xl font-semibold mb-4'>
                 {selectedProduct.title}
               </h2>
-              <p className='text-orange-500 mb-4 font-medium text-lg'>${selectedProduct.price}</p>
+              <p className='text-orange-500 mb-2 font-medium text-lg'>${selectedProduct.price}</p>
+              <p className='text-gray-500 mb-4 font-medium text-sm '>In Stock: {selectedProduct.rating.count}</p>
               <p className='capitalize text-sm pb-2'>{selectedProduct.description}</p>
                <button
                 className='mt-auto bg-orange-500 text-white mt-4 px-6 py-1 rounded-lg self-end'
