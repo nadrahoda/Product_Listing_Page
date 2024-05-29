@@ -26,7 +26,7 @@ export default function Home () {
     const fetchProducts = async () => {
       const response = await axios.get(
         process.env.NEXT_PUBLIC_API_URL as string
-      )
+      )  // https://fakestoreapi.com/products
       setProducts(response.data)
     }
     fetchProducts()
